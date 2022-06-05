@@ -1,0 +1,104 @@
+ACCESSIBILITY CHECK
+ACCESSIBILITY TEST check for: https://secure.bankofamerica.com/auth/enroll/enroll-entry/
+Found 8 items
+
+1: Required ARIA attributes must be provided
+Description: Ensures elements with ARIA roles have all required ARIA attributes
+Help URL: https://dequeuniversity.com/rules/axe/3.5/aria-required-attr?application=axeAPI
+Impact: critical
+Tags: cat.aria, wcag2a, wcag412
+		HTML element: <h1 data-font="cnx-regular" class="heading title-heading" id="skip-to-h1" role="heading">Enroll in Online &amp; Mobile Banking</h1>
+		Selector: [#skip-to-h1]
+
+
+2: id attribute value must be unique
+Description: Ensures every id attribute value is unique
+Help URL: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+Impact: minor
+Tags: cat.parsing, wcag2a, wcag411
+		HTML element: <div id="introText" class="column small-12 intro-text">Please provide the following information to begin your enrollment.</div>
+		Selector: [#title-section > .mbottom-30.row > .intro-text.column.small-12]
+		HTML element: <button class="spa-btn spa-btn--small spa-btn--primary spa-btn--expand-on-small btn-send-otp" id="send-otp-code" type="button" disabled="disabled">Send Code</button>
+		Selector: [.btn-send-otp]
+		HTML element: <button class="spa-btn spa-btn--small spa-btn--secondary spa-btn--expand-on-small btn-cancel" id="cancel-request-otp" type="button">Cancel</button>
+		Selector: [#otp-request-caw-buttons > .btn-cancel.spa-btn--small.spa-btn--secondary]
+		HTML element: <div id="enroll-options-container" class="column enroll-options-container no-padding">
+		Selector: [.enroll-options-container.no-padding.column]
+		HTML element: <a id="closeIcon" class="closeIcon spa-ui-layer-close" href="javascript:void(0);">
+		Selector: [.title-row.mt-20.mb-30 > div > .closeIcon.spa-ui-layer-close]
+		HTML element: <img tabindex="1" width="15" height="20" id="closeIconImg" src="https://secure1.bac-assets.com/sparta/auth/enroll/spa-assets/images/assets-images-site-login-common-Xmark@2x-gray-CSX98b2f672.png">
+		Selector: [.title-row.mt-20.mb-30 > div > .closeIcon.spa-ui-layer-close > .spa-close-x[aria-hidden="true"] > img[width="\31 5"][height="\32 0"]]
+		HTML element: <div id="service-aggrement-content" class="row enroll-option hidden" data-content="service-aggrement">
+		Selector: [div[data-content="service-aggrement"]]
+
+
+3: Headings must not be empty
+Description: Ensures headings have discernible text
+Help URL: https://dequeuniversity.com/rules/axe/3.5/empty-heading?application=axeAPI
+Impact: minor
+Tags: cat.name-role-value, best-practice
+		HTML element: <h2></h2>
+		Selector: [#header-logo > h2]
+
+
+4: Images must have alternate text
+Description: Ensures <img> elements have alternate text or a role of none or presentation
+Help URL: https://dequeuniversity.com/rules/axe/3.5/image-alt?application=axeAPI
+Impact: critical
+Tags: cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a
+		HTML element: <img src="https://secure1.bac-assets.com/sparta/auth/enroll/spa-assets/images/assets-images-global-header-lock-CSX1f35fd71.png">
+		Selector: [.fl-lt:nth-child(1) > img]
+		HTML element: <img src="https://secure1.bac-assets.com/sparta/auth/enroll/spa-assets/images/assets-images-global-footer-eha_logo_1x-CSXc5bd9130.png">
+		Selector: [.f-icon > img]
+
+
+5: Document must have one main landmark
+Description: Ensures the document has a main landmark
+Help URL: https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI
+Impact: moderate
+Tags: cat.semantics, best-practice
+		HTML element: <html lang="en-US" layoutversion="3.1.0" layoutsupportheaderversion="5.1.0">
+		Selector: [html]
+
+
+6: <ul> and <ol> must only directly contain <li>, <script> or <template> elements
+Description: Ensures that lists are structured correctly
+Help URL: https://dequeuniversity.com/rules/axe/3.5/list?application=axeAPI
+Impact: serious
+Tags: cat.structure, wcag2a, wcag131
+		HTML element: <ul class="spa-page-header-links">
+		Selector: [.spa-page-header-links]
+
+
+7: Page must contain a level-one heading
+Description: Ensure that the page, or at least one of its frames contains a level-one heading
+Help URL: https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axeAPI
+Impact: moderate
+Tags: cat.semantics, best-practice
+		HTML element: <html lang="en-US" layoutversion="3.1.0" layoutsupportheaderversion="5.1.0">
+		Selector: [html]
+
+
+8: All page content must be contained by landmarks
+Description: Ensures all page content is contained by landmarks
+Help URL: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+Impact: moderate
+Tags: cat.keyboard, best-practice
+		HTML element: <div class="spa-page-title spa-page-title--has-flagscape spa-page-title--red spa-page-title--white-text" data-sticky-level="1">
+		Selector: [.spa-page-title]
+		HTML element: <section id="title-section"><div class="row mbottom-20"><div class="column small-12 title-text">Let's get started</div></div><div class="row mbottom-30"><div id="introText" class="column small-12 intro-text">Please provide the following information to begin your enrollment.</div></div></section>
+		Selector: [#title-section]
+		HTML element: <label class="spa-input-label" data-font="cnx-medium" for="acctNumber">Card or Account Number (Last 6 digits) <span class="spa-input-label--required"></span> <span class="ada-hidden"></span></label>
+		Selector: [label[for="acctNumber"]]
+		HTML element: <input type="text" pattern="[0-9]+" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="[0-9]+" data-default-pattern="[0-9]+" class="spa-input-text gis-mask gis-mask-original" data-gis-mask="false" id="acctNumber" name="acctNumberField" autocomplete="off" maxlength="6" data-field-type="number" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" required="" aria-required="true" data-required-error-message="Please verify your information">
+		Selector: [#acctNumber]
+		HTML element: <label class="spa-input-label" data-font="cnx-medium" for="ssNumber">Social Security Number (SSN) or Tax ID Number (TIN) <span class="spa-input-label--required"></span> <span class="ada-hidden"></span></label>
+		Selector: [label[for="ssNumber"]]
+		HTML element: <input type="password" pattern="[0-9]*" data-mobile-input-type="password" data-default-input-type="password" data-android-input-type="password" data-mobile-pattern="[0-9]*" data-default-pattern="[0-9]*" data-sparta-input-format="ssn" novalidate="true" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;_&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:false,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true,&quot;mask&quot;:&quot;999-99-9999&quot;}" class="spa-input-text gis-mask gis-mask-original" data-gis-mask="false" inputmode="numeric" id="ssNumber" name="ssNumberField" autocomplete="off" data-field-type="ssn" required="" aria-required="true" data-required-error-message="Please verify your information" data-sparta-input-format-initialized="true" data-celebrus-password="true">
+		Selector: [#ssNumber]
+		HTML element: <section id="trailing-section">
+		Selector: [#trailing-section]
+		HTML element: <section id="btn-section">
+		Selector: [#btn-section]
+		HTML element: <div class="footer-inner row full-width clearfix">
+		Selector: [.footer-inner]

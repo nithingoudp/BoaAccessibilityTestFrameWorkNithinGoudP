@@ -1,0 +1,20 @@
+ACCESSIBILITY CHECK
+ACCESSIBILITY TEST check for: https://www.bankofamerica.com/online-banking/sign-in/
+Found 2 items
+
+1: ARIA attributes must conform to valid names
+Description: Ensures attributes that begin with aria- are valid ARIA attributes
+Help URL: https://dequeuniversity.com/rules/axe/3.5/aria-valid-attr?application=axeAPI
+Impact: critical
+Tags: cat.aria, wcag2a, wcag412
+		HTML element: <a class="btn-bofa btn-bofa-blue " data-language="en" data-link-style="2" href="https://www.bankofamerica.com/deposits/manage/faq-routing-numbers.go" name="Routing_Numbers_FAQ" role="button" target="_self" data-link-ada1="" data-link-ada2="" aria-role="button">Routing Numbers</a>
+		Selector: [.btn-bofa]
+
+
+2: Links must have discernible text
+Description: Ensures links have discernible text
+Help URL: https://dequeuniversity.com/rules/axe/3.5/link-name?application=axeAPI
+Impact: serious
+Tags: cat.name-role-value, wcag2a, wcag412, wcag244, section508, section508.22.a
+		HTML element: <a data-language="en" data-link-style="0" href="https://www.bankofamerica.com/online-banking/mobile.go" name="get_the_app" role="link" target="_self" data-link-ada1="" data-link-ada2="">
+		Selector: [a[data-link-style="\30 "][name="get_the_app"][role="link"]:nth-child(1)]

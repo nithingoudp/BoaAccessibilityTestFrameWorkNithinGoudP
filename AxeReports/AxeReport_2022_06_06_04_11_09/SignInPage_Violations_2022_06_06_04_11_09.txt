@@ -1,0 +1,143 @@
+ACCESSIBILITY CHECK
+ACCESSIBILITY TEST check for: https://www.bankofamerica.com/online-banking/sign-in/
+Found 5 items
+
+1: ARIA hidden element must not contain focusable elements
+Description: Ensures aria-hidden elements do not contain focusable elements
+Help URL: https://dequeuniversity.com/rules/axe/3.5/aria-hidden-focus?application=axeAPI
+Impact: serious
+Tags: cat.name-role-value, wcag2a, wcag412, wcag131
+		HTML element: <div class="medium-6 columns content-well light-blue circle-slide-1 currentSelection" id="slide-1" aria-hidden="true" tabindex="0">
+		Selector: [#slide-1]
+
+
+2: IDs of active elements must be unique
+Description: Ensures every id attribute value of active elements is unique
+Help URL: https://dequeuniversity.com/rules/axe/3.5/duplicate-id-active?application=axeAPI
+Impact: serious
+Tags: cat.parsing, wcag2a, wcag411
+		HTML element: <button default-button="" class="spa-btn spa-btn--primary spa-btn--large spa-btn--expand-on-small mb-15 mr-25 secure-signin-submit" id="secure-signin-submit" type="button" data-bactmln="validate-signin-firstfactor">Log In</button>
+		Selector: [#responsive-signin > .secure-signin-submit.mr-25[data-bactmln="validate-signin-firstfactor"]]
+		HTML element: <a id="sipc" href="http://sipc.org/" class="spa-ui-layer-link spa-fn spa-ui-layer-modal-link" data-options="{&quot;interstitialType&quot;:&quot;leaving-site&quot;,&quot;targetAction&quot;:&quot;new-tab&quot;}">SIPC<span class="spa-ada-text ada-hidden">&nbsp;layer</span></a>
+		Selector: [p:nth-child(2) > .spa-ui-layer-modal-link.spa-ui-layer-link[href$="sipc\.org\/"]]
+
+
+3: id attribute value must be unique
+Description: Ensures every id attribute value is unique
+Help URL: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+Impact: minor
+Tags: cat.parsing, wcag2a, wcag411
+		HTML element: <div data-component="layout" data-layout="flex-grid-layout" data-version="" class="sparta-layout flex-grid-layout" id="top">
+		Selector: [.flex-grid-layout]
+		HTML element: <section id="head-row" class="head-row small-centered">
+		Selector: [.flex-grid-layout > .head-row.small-centered]
+		HTML element: <a id="header-online-banking-mobile-online-banking" href="/online-banking/mobile-and-online-banking-features/">Mobile &amp; Online Banking Features</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(1) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(1) > a]
+		HTML element: <a id="header-online-banking-mobile-check-deposit" href="/online-banking/mobile-and-online-banking-features/mobile-check-deposit/">Mobile Check Deposit</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(1) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(2) > a]
+		HTML element: <a id="header-online-banking-send-receive-money" href="/online-banking/mobile-and-online-banking-features/send-receive-money/">Send &amp; Receive Money with Zelle®</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(1) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(3) > a]
+		HTML element: <a id="header-online-banking-trasnfer-between-accounts" href="/online-banking/mobile-and-online-banking-features/money-transfer/">Transfer Between Accounts</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(1) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(4) > a]
+		HTML element: <a id="header-online-banking-bill-pay" href="/online-banking/mobile-and-online-banking-features/bill-pay/">Bill Pay</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(1) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(5) > a]
+		HTML element: <a id="header-learn-more-mobile-online-top-nav" href="/online-banking/mobile-and-online-banking-features/overview/">Learn About Mobile &amp; Online Banking</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(2) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(1) > a]
+		HTML element: <a id="header-enroll-online-banking-top-nav" href="https://secure.bankofamerica.com/login/enroll/entry/olbEnroll.go?reason=model_enroll">Enroll in Online Banking</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(2) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(2) > a]
+		HTML element: <a id="header-get-mobile-app-top-nav" href="javascript:void(0);" class="get-the-app-link-header-footer spa-ui-layer-link spa-fn spa-ui-layer-modal-link" rel="globalGetAppModalContent" data-options="{&quot;rel&quot;:&quot;globalGetAppModalContent&quot;}">
+		Selector: [.js-nav-section-container > .navigation__list > .navigation__item:nth-child(3) > .get-the-app-link-header-footer.spa-ui-layer-modal-link[rel="globalGetAppModalContent"]]
+		HTML element: <a id="header-supported-mobile-devices-top-nav" href="/online-banking/iphone-banking-app.go">Supported Mobile Devices</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(2) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(4) > a]
+		HTML element: <a id="header-faqs-top-nav" href="/onlinebanking/online-banking-services-faqs.go">Online Banking FAQs</a>
+		Selector: [.medium-3.navigation__column.column:nth-child(2) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(5) > a]
+		HTML element: <section id="generic-error-wrapper" class="ft-small"><div class="text-center"><div id="error-target"></div></div></section>
+		Selector: [form > .ft-small]
+		HTML element: <div class="row hidden" id="signin-with-passcode"><a href="javascript:void(0);" data-font="cnx-regular" class="ft-link" id="signin-with-passcode-text" type="link">Log In with Password</a></div>
+		Selector: [#caw-signin > .hidden.row:nth-child(5)]
+		HTML element: <a href="javascript:void(0);" data-font="cnx-regular" class="ft-link" id="signin-with-passcode-text" type="link">Log In with Password</a>
+		Selector: [#caw-signin > .hidden.row:nth-child(5) > .ft-link[type="link"][href="javascript\:void\(0\)\;"]]
+		HTML element: <div id="record-device-title-container" class="row spa-collapse-large spa-collapse-small full-width clearfix"><h3 class="container-pad clearfix title-bar red-bar cnx-regular page-title-wrapper" role="heading">Verify Your Identity</h3></div>
+		Selector: [#ah-cq-container > .spa-collapse-large.full-width.spa-collapse-small]
+		HTML element: <button class="spa-btn spa-btn--small spa-btn--primary spa-btn--expand-on-small btn-send-otp" id="send-otp-code" type="button">Send Code</button>
+		Selector: [#otp-request-caw-buttons > .btn-send-otp.spa-btn--expand-on-small]
+		HTML element: <path d="M40.52,34.9 L24.66,3.35 C24.0205199,1.89971197 22.5850142,0.963815355 21,0.963815355 C19.4149858,0.963815355 17.9794801,1.89971197 17.34,3.35 L1.48,34.89 C0.780648378,36.1939013 0.828414331,37.7715265 1.60536938,39.0307295 C2.38232443,40.2899325 3.77093507,41.040228 5.25,41 L36.75,41 C38.2260948,41.0382165 39.6113234,40.2892339 40.3876113,39.0331712 C41.1638992,37.7771086 41.2143138,36.2031672 40.52,34.9 Z" id="Shape">
+		Selector: [#Path_Clipping_Path > path]
+
+
+4: Document must have one main landmark
+Description: Ensures the document has a main landmark
+Help URL: https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI
+Impact: moderate
+Tags: cat.semantics, best-practice
+		HTML element: <html lang="en-US" layoutversion="3.1.0" layoutsupportheaderversion="5.1.0">
+		Selector: [html]
+
+
+5: All page content must be contained by landmarks
+Description: Ensures all page content is contained by landmarks
+Help URL: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+Impact: moderate
+Tags: cat.keyboard, best-practice
+		HTML element: <div class="spa-page-title spa-sticky spa-page-title--has-flagscape spa-page-title--red-gradient spa-page-title--white-text" data-sticky-level="1" data-sticky-parent="body" style="">
+		Selector: [.spa-page-title]
+		HTML element: <div class="engagement-image">
+		Selector: [.engagement-image]
+		HTML element: <h2 data-font="cnx-regular" class="sign-in-header-text">Easily manage your bank accounts and finances&nbsp;online</h2>
+		Selector: [.sign-in-header-text]
+		HTML element: <div class="show-for-medium-up" data-font="cnx-regular">
+		Selector: [.show-for-medium-up[data-font="cnx-regular"]]
+		HTML element: <span class="get-app-text">The convenience and security of Online Banking from almost anywhere</span>
+		Selector: [.small-12.columns > .get-app-text]
+		HTML element: <a id="getTheAppModuleButton" href="javascript:void(0);" class="get-app-button spa-btn spa-btn--secondary spa-btn--small spa-ui-layer-link spa-fn spa-ui-layer-modal-link" rel="globalGetAppModalContent" data-options="{&quot;rel&quot;:&quot;globalGetAppModalContent&quot;}">
+		Selector: [#getTheAppModuleButton]
+		HTML element: <h2 class="headline" data-font="cnx-regular">Popular services</h2>
+		Selector: [#popularServicesOlbModule > section > h2]
+		HTML element: <div class="sign-in-text">Log in to</div>
+		Selector: [#signInTransferMoney > .sign-in-text]
+		HTML element: <div data-font="cnx-light" class="headline">Transfer money</div>
+		Selector: [#signInTransferMoney > .headline[data-font="cnx-light"]]
+		HTML element: <div class="sign-in-text">Log in to</div>
+		Selector: [#signInBillPay > .sign-in-text]
+		HTML element: <div data-font="cnx-light" class="headline">Bill Pay</div>
+		Selector: [#signInBillPay > .headline[data-font="cnx-light"]]
+		HTML element: <div class="sign-in-text">Log in to</div>
+		Selector: [#signInScheduleAppointment > .sign-in-text]
+		HTML element: <div data-font="cnx-light" class="headline">Schedule an appointment</div>
+		Selector: [#signInScheduleAppointment > .headline[data-font="cnx-light"]]
+		HTML element: <div class="sign-in-text">Log in to</div>
+		Selector: [#signInOrderChecks > .sign-in-text]
+		HTML element: <div data-font="cnx-light" class="headline">Order Checks</div>
+		Selector: [#signInOrderChecks > .headline[data-font="cnx-light"]]
+		HTML element: <div class="sign-in-text">Log in to</div>
+		Selector: [#signInGoPaperless > .sign-in-text]
+		HTML element: <div data-font="cnx-light" class="headline">Go paperless</div>
+		Selector: [#signInGoPaperless > .headline[data-font="cnx-light"]]
+		HTML element: <div class="sign-in-text">Log in to</div>
+		Selector: [#signInActivateCard > .sign-in-text]
+		HTML element: <div data-font="cnx-light" class="headline">Activate a card</div>
+		Selector: [#signInActivateCard > .headline[data-font="cnx-light"]]
+		HTML element: <div class="sign-in-text">Log in to</div>
+		Selector: [#singInOpenNewAccount > .sign-in-text]
+		HTML element: <div data-font="cnx-light" class="headline">Open a new account</div>
+		Selector: [#singInOpenNewAccount > .headline[data-font="cnx-light"]]
+		HTML element: <h2 data-font="cnx-regular">Sign in to additional services</h2>
+		Selector: [#signInAdditionalServicesModule > section > h2]
+		HTML element: <div class="row show-for-medium-up content-row">
+		Selector: [.content-row]
+		HTML element: <div class="row text-center"><div class="columns small-2 medium-2 large-2"></div><div class="columns small-8 medium-8 large-8 centered"><h2 data-font="cnx-regular">Security Guarantee</h2></div><div class="columns small-2 medium-2 large-2"></div></div>
+		Selector: [section > .text-center.row:nth-child(2)]
+		HTML element: <div class="row text-center">
+		Selector: [.text-center.row:nth-child(3)]
+		HTML element: <div class="row text-center">
+		Selector: [.text-center.row:nth-child(4)]
+		HTML element: <label class="spa-input-label" data-font="cnx-medium" for="locationInputField">Find a location <span class="ada-hidden"></span></label>
+		Selector: [label[for="locationInputField"]]
+		HTML element: <input type="text" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="" data-default-pattern="" data-sparta-input-format="name" autocorrect="off" autocomplete="name" class="spa-input-text cs-locationInputField" data-gis-mask="false" id="locationInputField" name="q" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" autocapitalize="none" spellcheck="false">
+		Selector: [#locationInputField]
+		HTML element: <p class="spa-input-hint">Enter a city, state or ZIP code</p>
+		Selector: [#formFindLocation > .spa-input-box.spa-input--sparta2.spa-input > .spa-input-hint]
+		HTML element: <a id="findLocationGoButton" href="javascript:void(0);" class="bluebuttoncenter spa-btn--medium spa-btn spa-btn--primary spa-btn--small" target="_blank">Go <span class="ada-hidden">button</span></a>
+		Selector: [#findLocationGoButton]
+		HTML element: <div class="flex-right"><h3 class="headline" data-font="cnx-regular">Give feedback</h3><p><a id="findLocationFeedbackLink" href="javascript:void(0)">Tell us what you think of our site</a></p></div>
+		Selector: [.flex-right]

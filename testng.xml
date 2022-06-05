@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BOA Test Suite">
+    <test verbose="2" preserve-order="true" name="BOA Axes Tests">
+        <parameter name="browser" value="Chrome"></parameter>
+        <parameter name="enableAxes" value="false"></parameter>
+        <packages>
+            <package name="boa.tests"></package>
+            <package name="boa.config"></package>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,67 @@
+ACCESSIBILITY CHECK
+ACCESSIBILITY TEST check for: https://www.bankofamerica.com/global-search-public/results/
+Found 5 items
+
+1: Elements must only use allowed ARIA attributes
+Description: Ensures ARIA attributes are allowed for an element's role
+Help URL: https://dequeuniversity.com/rules/axe/3.5/aria-allowed-attr?application=axeAPI
+Impact: critical
+Tags: cat.aria, wcag2a, wcag412
+		HTML element: <input type="text" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="" data-default-pattern="" data-sparta-input-format="name" autocorrect="off" class="spa-input-text" data-gis-mask="false" id="nav-search-query" name="nav-search-query" maxlength="99" autocomplete="off" aria-autocomplete="list" aria-expanded="false" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" placeholder="">
+		Selector: [#nav-search-query]
+
+
+2: id attribute value must be unique
+Description: Ensures every id attribute value is unique
+Help URL: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+Impact: minor
+Tags: cat.parsing, wcag2a, wcag411
+		HTML element: <div data-component="layout" data-layout="flex-grid-layout" data-version="" class="sparta-layout flex-grid-layout" id="top">
+		Selector: [.flex-grid-layout]
+		HTML element: <section id="head-row" class="head-row small-centered">
+		Selector: [.flex-grid-layout > .head-row]
+
+
+3: Form elements must have labels
+Description: Ensures every form element has a label
+Help URL: https://dequeuniversity.com/rules/axe/3.5/label?application=axeAPI
+Impact: critical
+Tags: cat.forms, wcag2a, wcag412, wcag131, section508, section508.22.n
+		HTML element: <input type="text" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="" data-default-pattern="" data-sparta-input-format="name" autocorrect="off" class="spa-input-text" data-gis-mask="false" id="nav-search-query" name="nav-search-query" maxlength="99" autocomplete="off" aria-autocomplete="list" aria-expanded="false" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" placeholder="">
+		Selector: [#nav-search-query]
+
+
+4: Document must have one main landmark
+Description: Ensures the document has a main landmark
+Help URL: https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI
+Impact: moderate
+Tags: cat.semantics, best-practice
+		HTML element: <html lang="en-US" layoutversion="3.1.0" layoutsupportheaderversion="4.5.3">
+		Selector: [html]
+
+
+5: All page content must be contained by landmarks
+Description: Ensures all page content is contained by landmarks
+Help URL: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+Impact: moderate
+Tags: cat.keyboard, best-practice
+		HTML element: <div class="spa-page-title spa-sticky spa-page-title--has-flagscape spa-page-title--red spa-page-title--white-text" data-sticky-full-width="true" data-sticky-level="1" data-sticky-parent="body" data-initialized="true" style="null">
+		Selector: [.spa-page-title]
+		HTML element: <h2 class="spa-global-search-page--title">How can we help?</h2>
+		Selector: [.spa-global-search-page--title]
+		HTML element: <input type="text" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="" data-default-pattern="" data-sparta-input-format="name" autocorrect="off" class="spa-input-text" data-gis-mask="false" id="nav-search-query" name="nav-search-query" maxlength="99" autocomplete="off" aria-autocomplete="list" aria-expanded="false" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" placeholder="">
+		Selector: [#nav-search-query]
+		HTML element: <span id="global-search-input-close-link" class="spa-icon icon-close clear-input" tabindex="0" role="button">
+        <span class="ada-hidden">clear search text</span>
+      </span>
+		Selector: [#global-search-input-close-link]
+		HTML element: <button class="spa-btn spa-btn--secondary spa-btn--medium search-btn submit track-me" type="button" data-bactmln="search-button-stage" name="search-button-stage" aria-label="Search submit" aria-expanded="true" aria-describedby="">
+        Search
+      </button>
+		Selector: [.spa-btn--secondary]
+		HTML element: <div class="spa-global-search-result-feedback"><a id="feedbackLnk" href="javascript:void(0);" class="spa-global-search-result-feedback--link">Was this helpful?</a></div>
+		Selector: [.spa-global-search-result-feedback]
+		HTML element: <span style="font-size:44px" class="show-for-large-up">Need more help?</span>
+		Selector: [#heading > .show-for-large-up]
+		HTML element: <div class="blocks-container">
+		Selector: [.blocks-container]
