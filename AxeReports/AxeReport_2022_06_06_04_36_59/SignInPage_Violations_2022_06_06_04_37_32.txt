@@ -7,7 +7,7 @@ Description: Ensures ARIA attributes are allowed for an element's role
 Help URL: https://dequeuniversity.com/rules/axe/3.5/aria-allowed-attr?application=axeAPI
 Impact: critical
 Tags: cat.aria, wcag2a, wcag412
-		HTML element: <input type="text" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="" data-default-pattern="" data-sparta-input-format="name" autocorrect="off" class="spa-input-text cs-nav-search-query" data-gis-mask="false" id="nav-search-query" name="nav-search-query" maxlength="99" autocomplete="off" aria-autocomplete="list" aria-expanded="false" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" style="" placeholder="How can we help you?" aria-describedby="" autocapitalize="none" spellcheck="false">
+		HTML element: <input type="text" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="" data-default-pattern="" data-sparta-input-format="name" autocorrect="off" class="spa-input-text cs-nav-search-query" data-gis-mask="false" id="nav-search-query" name="nav-search-query" maxlength="99" autocomplete="off" aria-autocomplete="list" aria-expanded="false" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" autocapitalize="none" spellcheck="false" placeholder="How can we help you?" aria-describedby="" style="">
 		Selector: [#nav-search-query]
 
 
@@ -49,6 +49,8 @@ Tags: cat.parsing, wcag2a, wcag411
 		Selector: [.flex-grid-layout]
 		HTML element: <section id="head-row" class="head-row small-centered">
 		Selector: [.flex-grid-layout > .head-row.small-centered]
+		HTML element: <div id="global-search-input-container-md"></div>
+		Selector: [#global-search-flyout-wrapper > .spa-card__body > .spa-global-search--flyout > div:nth-child(1)]
 		HTML element: <a id="header-online-banking-mobile-online-banking" href="/online-banking/mobile-and-online-banking-features/">Mobile &amp; Online Banking Features</a>
 		Selector: [.medium-3.navigation__column.column:nth-child(1) > .js-nav-section-container > .navigation__list > .navigation__item:nth-child(1) > a]
 		HTML element: <a id="header-online-banking-mobile-check-deposit" href="/online-banking/mobile-and-online-banking-features/mobile-check-deposit/">Mobile Check Deposit</a>

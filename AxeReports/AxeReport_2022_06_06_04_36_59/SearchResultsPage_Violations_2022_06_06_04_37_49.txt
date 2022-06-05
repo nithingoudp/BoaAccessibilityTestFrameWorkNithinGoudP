@@ -55,10 +55,10 @@ Tags: cat.keyboard, best-practice
         <span class="ada-hidden">clear search text</span>
       </span>
 		Selector: [#global-search-input-close-link]
-		HTML element: <button class="spa-btn spa-btn--secondary spa-btn--medium search-btn submit track-me" type="button" data-bactmln="search-button-stage" name="search-button-stage" aria-label="Search submit" aria-expanded="true" aria-describedby="">
+		HTML element: <button class="spa-btn spa-btn--secondary spa-btn--medium search-btn submit track-me" type="button" data-bactmln="search-button-stage" name="search-button-stage" aria-label="Search submit">
         Search
       </button>
-		Selector: [.spa-btn--secondary]
+		Selector: [.spa-global-search-form--lg > button]
 		HTML element: <div class="spa-global-search-result-feedback"><a id="feedbackLnk" href="javascript:void(0);" class="spa-global-search-result-feedback--link">Was this helpful?</a></div>
 		Selector: [.spa-global-search-result-feedback]
 		HTML element: <span style="font-size:44px" class="show-for-large-up">Need more help?</span>

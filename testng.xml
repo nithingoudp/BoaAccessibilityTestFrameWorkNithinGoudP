@@ -3,7 +3,7 @@
 <suite name="BOA Test Suite">
     <test verbose="2" preserve-order="true" name="BOA Axes Tests">
         <parameter name="browser" value="Chrome"></parameter>
-        <parameter name="enableAxes" value="false"></parameter>
+        <parameter name="enableAxes" value="true"></parameter>
         <packages>
             <package name="boa.tests"></package>
             <package name="boa.config"></package>
